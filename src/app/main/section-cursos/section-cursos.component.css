@@ -1,0 +1,11 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    width: max-content;
+    gap: 2.5rem;
+
+}
+
+app-card-cursos {
+    width: 286px;
+}
