@@ -1,0 +1,38 @@
+.routing-container {
+    width: 286px;
+    height: 337px;
+    max-height: 337px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a :hover .card-body {
+    background-color: var(--quinary-color);
+    color: white;
+}
+
+.card-body {
+    background-color: var(--secondary-color);
+    border-radius: 0 0 calc(0.375rem - 1px) calc(0.375rem - 1px);
+    color: white;
+    font-family: var(--primary-font);
+    overflow: scroll;
+    height: 136px;
+}
+
+.card-body::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    border: none;
+    height: 337px;
+    max-height: 337px;
+}
+
+.card-img-top {
+    height: 200px;
+}
