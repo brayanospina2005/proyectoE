@@ -26,7 +26,7 @@ import { DescripcionComponent } from './main/cursos/descripcion/descripcion.comp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

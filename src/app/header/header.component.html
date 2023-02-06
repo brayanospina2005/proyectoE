@@ -1,1 +1,130 @@
-<p>header works!</p>
+<header>
+    <nav class="navbar navbar-expand bg-dark secondary-color" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png"
+                    alt="Bootstrap" width="30" height="24">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-light"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <!-- <ul class="navbar-nav me-auto mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light fs-4" aria-current="page" href="#">Cursos</a>
+                    </li>
+                </ul> -->
+                <form class="form">
+                    <label for="search">
+                        <input class="input" type="text" required="" placeholder="Aprende" id="search">
+                        <div class="fancy-bg"></div>
+                        <div class="search">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="r-14j79pv r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-4wgw6l r-f727ji r-bnwqim r-1plcrui r-lrvibr">
+                                <g>
+                                    <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <button class="close-btn" type="reset">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </label>
+                </form>
+
+                <!-- off canvas -->
+                    <button class="p-1 bg-transparent border-0 me-2">
+
+                        <i class="fa-regular fa-bell fs-3 text-light position-relative" id="message" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                    </button>
+
+              
+
+                <div class="dropdown d-none d-sm-block">
+                    <button
+                        class="btn btn-secondary primary-color m-0 p-0 pe-3 dropdown-toggle d-flex justify-content-center align-items-center"
+                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="profile m-0 me-2">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135823.png" alt="">
+                        </div>
+                        <span class="mx-2">
+                            User2005
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown d-sm-none">
+                    <button
+                        class="btn btn-secondary primary-color m-0 p-0 pe-3 dropdown-toggle d-flex justify-content-center align-items-center"
+                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="profile m-0 me-2">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135823.png" alt="">
+                        </div>
+                      
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
+    aria-labelledby="offcanvasRightLabel" data-bs-theme="dark">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-light" id="offcanvasRightLabel">Notificaciones</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="accordion bg-dark" id="accordionExample">
+            <div class="accordion-item border-0 border-bottom">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button primary-color text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Curso bienestar
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-0 border-bottom">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed  primary-color text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Curso yoga
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-0 border-bottom">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed  primary-color text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    </div>
+</header>
