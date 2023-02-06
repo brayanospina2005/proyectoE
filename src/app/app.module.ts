@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { SectionCursosComponent } from './main/section-cursos/section-cursos.component';
 import { CursosComponent } from './main/cursos/cursos.component';
 import { DescripcionComponent } from './main/cursos/descripcion/descripcion.component';
+import { CardCursosComponent } from './main/section-cursos/card-cursos/card-cursos.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { DescripcionComponent } from './main/cursos/descripcion/descripcion.comp
     SectionCursosComponent,
     CursosComponent,
     DescripcionComponent,
+    CardCursosComponent,
   ],
   imports: [
     BrowserModule,
