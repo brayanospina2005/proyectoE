@@ -10,23 +10,3 @@
     --primary-font: 'Nunito sans', Sans-serif;
 }
 
-
-.primary-color{
-    background-color: var(--primary-color) !important;
-}
-
-.secondary-color{
-    background-color: var(--secondary-color) !important;
-}
-
-.tertiary-color{
-    background-color: var(--tertiary-color) !important;
-}
-
-.quaternary-color{
-    background-color: var(--quaternary-color) !important;
-}
-
-.quinary-color{
-    background-color: var(--quinary-color) !important;
-}
