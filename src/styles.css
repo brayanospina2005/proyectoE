@@ -11,7 +11,5 @@
 }
 
 body{
-    background-color: var(--primary-color);
-    color: var(--quinary-color);
     font-family: var(--primary-font);
 }

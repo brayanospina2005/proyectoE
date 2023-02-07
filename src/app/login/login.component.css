@@ -1,0 +1,14 @@
+.principal {
+    background: linear-gradient(to right, var(--quaternary-color), var(--quinary-color));
+    color: var(--quinary-color);
+}
+
+.bg {
+    background-image: url(paz.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.error-message {
+    color: red;
+}
