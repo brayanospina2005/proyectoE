@@ -21,6 +21,7 @@ p{
       "TITULO TITULO IMAGEN"
       "DESCRIPCION DESCRIPCION BOTONES";
     border-radius: 8px 8px;
+    margin: 0 5rem 0 5rem;
   }
 
 .IMAGEN {
@@ -54,7 +55,7 @@ h2{
 }
   
 .TITULO {
-    justify-self: center;
+    margin: 6.1em;
     align-self: center;
     grid-area: TITULO;
     font-family: var(--primary-font);
@@ -63,11 +64,12 @@ h2{
 
 .myAccordion{
     align-content: center;
-    margin: 2% 5% 0 5%;
+    margin: 2% 5rem 0 5rem;
 }
 
 .video{
     width: 30%;
+    margin: auto;
 }
 
 
@@ -93,6 +95,16 @@ h2{
     justify-self: center; 
     margin-bottom: 3%;
   }
+}
+ 
+.accordion{
+  --bs-accordion-active-bg:  var(--tertiary-color);
+  --bs-accordion-border-color: black;
+  --bs-accordion-btn-color: black;
+  --bs-accordion-btn-bg: var(--quinary-color);
+  --bs-accordion-active-color: white;
+  --bs-accordion-color: black;
+  --bs-accordion-bg:  var(--quinary-color);
 }
 
   
