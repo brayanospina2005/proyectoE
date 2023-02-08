@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -22,8 +22,8 @@ const routes: Routes = [
         component: MainComponent,
       },
       {
-        path: 'descripcion',
-        component: DescripcionComponent,
+        path: 'cursos',
+        component: CursosComponent,
       },
       {
         path: '',
