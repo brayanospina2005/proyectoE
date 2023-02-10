@@ -28,7 +28,7 @@ export class LoginComponent {
         if(this.username === USERNAME1 
           && this.password === PASSWORD) {
             localStorage.setItem('user', JSON.stringify(this.userinfo));
-            this.router.navigate(['/cursos']);
+            this.router.navigate(['/main']);
           }
         else if(this.username === USERNAME2 
             && this.password === PASSWORD) {
