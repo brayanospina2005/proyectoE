@@ -11,6 +11,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { CursosComponent } from './main/cursos/cursos.component';
 import { DescripcionComponent } from './main/cursos/descripcion/descripcion.component';
 import { CardCursosComponent } from './main/section-cursos/card-cursos/card-cursos.component';
+import { FormComponent } from './form/form.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { CardCursosComponent } from './main/section-cursos/card-cursos/card-curs
     PageNotFoundComponent,
     LayoutComponent,
     CardCursosComponent,
+    FormComponent,
 
   ],
   imports: [
