@@ -10,7 +10,7 @@ a {
 }
 
 a :hover .card-body {
-    background-color: var(--quinary-color);
+    background-color: var(--tertiary-color);
     color: white;
 }
 
@@ -21,6 +21,7 @@ a :hover .card-body {
     font-family: var(--primary-font);
     overflow: scroll;
     height: 136px;
+    transition-duration: 0.6s;
 }
 
 .card-body::-webkit-scrollbar {
