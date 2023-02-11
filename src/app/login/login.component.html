@@ -1,67 +1,63 @@
-<div class="container principal w-75 mt-5 rounded shadow">
-    <div class="row align-items-stretch">
-        <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+<div [ngClass]="{'s-signup': isSignUp}" class="cont">
+    <div class="container">
+        <div class="form">
+            <h2>Inicar Sesión</h2>
+            <div *ngIf="loginError" class="error-message">
+                <p>Usuario o contraseña incorrecto</p></div>
+            <div class="mb-4">
+            <label>
+                <span>Usuario</span>
+                <input type="text" name="username" [(ngModel)]="username">
+            </label>
+            <label>
+                <span>Contraseña</span>
+                <input type="password" name="password" [(ngModel)]="password">
+            </label>
+            <button class="submit" type="button" (click)="login()">Iniciar Sesión</button>
+            <p class="forgot-pass">Recuperar contraseña</p>
+
+            <div class="social-media">
+                <ul class="li"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png" width="32" alt=""></ul>
+                <ul class="li"><img src="https://rotulosmatesanz.com/wp-content/uploads/2017/09/2000px-Google_G_Logo.svg_.png" width="32" alt=""></ul>
+            </div>
         </div>
 
-        <div class="col p-5 rounded-end">
-            <h2 class="fw-bold text-center py-5">Bienvenido</h2>
-
-            <form action="#">
-                <div *ngIf="loginError" class="error-message">
-                    <p>Usuario o contraseña incorrecto</p></div>
-                <div class="mb-4">
-                    <label for="username" class="form-label">Usuario</label>
-                    <input type="text" class="form-control" name="username" [(ngModel)]="username">
+        <div class="sub-cont">
+            <div class="img">
+                <div class="img-text m-up">
+                    <h2>¿Eres nuevo?</h2>
+                    <p>Crea una cuenta y descubre todo lo que tenemos para ofrecerte</p>
                 </div>
-                <div class="mb-4">
-                    <label for="password" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" name="password" [(ngModel)]="password">
+                <div class="img-text m-in">
+                    <h2>¿Ya tienes una cuenta?</h2>
+                    <p>Si ya estás registrado, Inicia Sesión</p>
                 </div>
-                <div class="mb-4 form-check">
-                    <input type="checkbox" name="connected" class="form-check-input" id="">
-                    <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                <div class="imgBtn" (click)="change()">
+                    <span *ngIf="isSignUp">Iniciar Sesión</span>
+                    <span *ngIf="!isSignUp">Crear Cuenta</span>
                 </div>
-                <div class="d-grid">
-                    <button type="submit" class="btn btn-primary" (click)="login()">Iniciar sesión</button>
-                </div>
-                <div class="my-3">
-                    <span>No tienes cuenta? <a href="#">Regístrate</a></span> <br>
-                    <span><a href="#">Recuperar contraseña</a></span>
-                </div>
-            </form>
-
-            <div class="container w-100 my-5">
-                <div class="row text-center">
-                    <div class="col-12">Iniciar Sesión</div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <button class="btn btn-outline-primary w-100 my-1">
-                            <div class="row align-items-center">
-                                <div class="col-2 d-none d-md-block">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png" width="32" alt="">
-                                </div>
-
-                                <div class="col-12 col-md-10 text-center">
-                                    Facebook
-                                </div>
-                            </div>
-                        </button>
-                    </div>
-                    <div class="col">
-                        <button class="btn btn-outline-danger w-100 my-1">
-                            <div class="row align-items-center">
-                                <div class="col-2 d-none d-md-block">
-                                    <img src="https://rotulosmatesanz.com/wp-content/uploads/2017/09/2000px-Google_G_Logo.svg_.png" width="32" alt="">
-                                </div>
-                                <div class="col-12 col-md-10 text-center">
-                                    Google
-                                </div>
-                            </div>
-                        </button>
-                    </div>
-                </div>
+            </div>
+            <div class="form signup">
+                <h2>Crear Cuenta</h2>
+                <label>
+                    <span>Nombre Completo</span>
+                    <input type="text">
+                </label>
+                <label>
+                    <span>Correo</span>
+                    <input type="email">
+                </label>
+                <label>
+                    <span>Contraseña</span>
+                    <input type="password">
+                </label>
+                <label>
+                    <span>Confirmar Contraseña</span>
+                    <input type="password">
+                </label>
+                <button type="button" class="submit">Crear Cuenta</button>
             </div>
         </div>
     </div>
+</div>
 </div>
