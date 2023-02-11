@@ -10,6 +10,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { LayoutComponent } from './layout/layout.component';
 import { CursosComponent } from './main/cursos/cursos.component';
 import { DescripcionComponent } from './main/cursos/descripcion/descripcion.component';
+import { CardCursosComponent } from './main/section-cursos/card-cursos/card-cursos.component';
 
 
 @NgModule({
@@ -20,11 +21,14 @@ import { DescripcionComponent } from './main/cursos/descripcion/descripcion.comp
     DescripcionComponent,
     PageNotFoundComponent,
     LayoutComponent,
+    CardCursosComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
