@@ -1,6 +1,7 @@
 .footer-section {
   background: #4e5491;
   position: relative;
+  
 }
 
 .single-cta i {
@@ -45,14 +46,58 @@
   margin-right: 15px;
 }
 .footer-social-icon i {
-  height: 40px;
-  width: 40px;
-  text-align: left;
+  height: 30px;
+  width: 30px;
+  text-align: center;
   line-height: 38px;
+  
 }
-.image{
-  width: 150px;
+
+  .subscribe-form {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 5px;
+  }
+  .subscribe-form input {
+    width: 100%;
+    padding: 14px 28px;
+    background: #ffffff;
+    color: #000000;
+  }
+  .subscribe-form button {
+      position: absolute;
+      right: 0;
+      background: #202545;
+      padding: 13px 20px;
+      border: 1px solid #000000;
+      top: 2.5px;    
+  }
+
+
+  .subscribe-form button i {
+    color: #fff;
+    font-size: 22px;
+    transform: rotate(-6deg);
+  }
+
+  .footer-widget-heading h3 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    font-family: 'Nunito sans', Sans-serif;
+  }
+  .footer-text p {
+    color: #000;
+    font-size: 15px;
+    font-family: 'Nunito sans', Sans-serif;
+  }
+
+
+.logo{
+  width: 250px;
   height: 100px;
+
 }
 
 
@@ -60,6 +105,7 @@
   background: #4e5491;
   padding: 10px 0px;
 }
+
 .copyright-text p {
   margin-left: 25%;
   font-size: 15px;
@@ -67,11 +113,10 @@
 
 }
 
-
 .container {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
-  
 }
+
 .container {
   border-bottom: 1px solid #373636;}
