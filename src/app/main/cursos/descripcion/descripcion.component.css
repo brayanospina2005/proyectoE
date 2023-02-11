@@ -1,5 +1,5 @@
 
-img{
+.imagen1{
     height: 230px;
     border-radius: 8px 8px;
     border:  1px solid white ;
@@ -111,4 +111,39 @@ h2{
   --bs-accordion-bg:  var(--quinary-color);
 }
 
+.info-adicional {
+  display: flex;
+  font-family: var(--primary-font);
+  color: white;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: row-reverse;
+}
   
+.titulo{
+  text-align: left;
+}
+
+.info-adicional div{
+  width: 50%;
+  margin: 55px;
+}
+
+.imagen2{
+  border-radius: 8%;
+  height: 170px;
+  margin-bottom: 2%;
+  border:  1px solid white ;
+}
+
+#estrella{
+  color: white;
+}
+
+.items{
+  line-height: 250%;
+}
