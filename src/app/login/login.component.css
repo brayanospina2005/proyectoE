@@ -1,18 +1,3 @@
-/* .principal {
-    background: linear-gradient(to right, var(--quaternary-color), var(--quinary-color));
-    color: var(--quinary-color);
-}
-
-.bg {
-    background-image: url(paz.jpg);
-    background-position: center center;
-    background-size: cover;
-}
-
-.col {
-    color: white;
-} */
-
 *, *:before, *:after{
     margin: 0;
     padding: 0;
