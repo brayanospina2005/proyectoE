@@ -4,8 +4,8 @@
 } */
 
 .main-container {
-    margin: 0 5rem 0 5rem;
-    background-color: var(--tertiary-color);
+    margin: 2rem 5rem 2rem 5rem;
+    /* background-color: var(--tertiary-color); */
 }
 
 .subtitulo-black {
@@ -18,7 +18,12 @@
 .ruta-container {
     width: 1264px;
     height: 200px;
-    background: var( --secondary-color);
+    background-color: var( --secondary-color);
+    transition-duration: 0.4s;
+}
+
+.ruta-container:hover{
+    background-color: var(--tertiary-color);
 }
 
 .img-container {
@@ -47,4 +52,40 @@
     font-size: 20px;
     font-weight: 700;
     flex: 1;
+}
+
+button {
+    border: none;
+    margin: auto 1rem 1rem 0;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    /* cursor: pointer; */
+    background-color: white;
+    transition-duration: 0.4s;
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0.671);
+
+}
+
+.slide img{
+    height: 500px;
+}
+
+.carousel-control-prev {
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.carousel-control-prev:hover {
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.carousel-control-next {
+    background-color: rgba(255, 0, 0, 0);
+
+}
+
+.carousel-control-next:hover {
+    background-color: rgba(255, 0, 0, 0);
 }
