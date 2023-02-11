@@ -14,16 +14,16 @@ const routes: Routes = [
     component: LoginComponent,
   },
   {
+    path: 'cursos/:id',
+    component: CursosComponent,
+  },
+  {
     path: '',
     component: LayoutComponent,
     children: [
       {
         path: 'main',
         component: MainComponent,
-      },
-      {
-        path: 'cursos',
-        component: CursosComponent,
       },
       {
         path: '',

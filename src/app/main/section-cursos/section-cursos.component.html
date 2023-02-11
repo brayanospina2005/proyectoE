@@ -1,11 +1,10 @@
 <div class="card-container">
-  <app-card-cursos></app-card-cursos>
-  <app-card-cursos></app-card-cursos>
-  <app-card-cursos></app-card-cursos>
-  <app-card-cursos></app-card-cursos>
-  <app-card-cursos></app-card-cursos>
-  <app-card-cursos></app-card-cursos>
-  <app-card-cursos></app-card-cursos>
-  <app-card-cursos></app-card-cursos>
-  <!-- gsedghseg -->
+  <div class="pruebaNGFOR" *ngFor="let item of CursosColeccion">
+    <app-card-cursos
+      [title]="item.title"
+      [image]="item.Image"
+      [descripcion]="item.descripcion"
+      [id]="item.id"
+    ></app-card-cursos>
+  </div>
 </div>
