@@ -10,6 +10,9 @@ import { LayoutComponent } from './layout/layout.component';
 import { CursosComponent } from './main/cursos/cursos.component';
 import { DescripcionComponent } from './main/cursos/descripcion/descripcion.component';
 import { CardCursosComponent } from './main/section-cursos/card-cursos/card-cursos.component';
+import { MainComponent } from './main/main.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -21,6 +24,10 @@ import { CardCursosComponent } from './main/section-cursos/card-cursos/card-curs
     PageNotFoundComponent,
     LayoutComponent,
     CardCursosComponent,
+    MainComponent,
+    SectionCursosComponent,
+    HeaderComponent,
+    FooterComponent,
 
   ],
   imports: [
