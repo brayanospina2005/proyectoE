@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
 const USERNAME1 = 'admin';
@@ -9,7 +9,17 @@ const PASSWORD = '12345';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent {
+export class LoginComponent implements AfterViewInit{
+  @ViewChild('imgBtn')
+  imgBtn!: ElementRef;
+  public isSignUp = false;
+
+  ngAfterViewInit() {
+    if (this.imgBtn && this.imgBtn.nativeElement) {
+    this.imgBtn.nativeElement.addEventListener('click', this.change.bind(this));
+    }
+  }
+
   userinfo = {
     username1: 'admin',
     username2: 'student',
@@ -38,5 +48,9 @@ export class LoginComponent {
         else {
           this.loginError = true;
         }
+    }
+
+    change() {
+      this.isSignUp = !this.isSignUp;
     }
 }
