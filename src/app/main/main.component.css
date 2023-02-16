@@ -89,3 +89,7 @@ button:hover{
 .carousel-control-next:hover {
     background-color: rgba(255, 0, 0, 0);
 }
+
+.carousel-item img {
+    object-fit: cover;
+}
