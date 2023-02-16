@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CursoService } from 'src/app/curso.service';
 
 @Component({
   selector: 'app-section-cursos',
@@ -50,10 +51,21 @@ export class SectionCursosComponent {
       id: '8',
     },
   ];
+
+  constructor(private cursoService: CursoService) { }
+
+  // onCursoCreado(nuevoCurso: cursosInfo) {
+  //   this.CursosColeccion.push(nuevoCurso); // Agrega el nuevo curso a la colección de cursos
+  // }
   
+  agregarCurso(nuevoCurso: cursosInfo) {
+    this.CursosColeccion.push(nuevoCurso);
+    console.log(this.CursosColeccion);
+  }
+
 }
 
-interface cursosInfo {
+export interface cursosInfo {
   title: string;
   Image: string;
   descripcion: string;

@@ -11,23 +11,22 @@
           <li>
             <p class="left">
               <label for="Nombredelcurso">Nombre del curso</label>
-              <input type="text" name="Nombredelcurso" placeholder="Yoga" />
+              <input type="text" name="Nombredelcurso" [(ngModel)]="nuevoCurso.title" placeholder="Yoga" />
             </p>
-            <p class="pull-right">
+            <!-- <p class="pull-right">
               <label for="Profesor">Profesor</label>
-              <input type="text" name="Profesor" placeholder="Brayan" />      
-            </p>
+              <input type="text" name="Profesor" [(ngModel)]="nuevoCurso.profesor" placeholder="Brayan" />      
+            </p> -->
           </li>       
           <li><div class="divider"></div></li>
           <li>
             <label for="Descripcion">Descripcion</label>
-            <textarea cols="46" rows="3" name="Descripcion"></textarea>
+            <textarea cols="46" rows="3" name="Descripcion" [(ngModel)]="nuevoCurso.descripcion" ></textarea>
           </li>
           
           <li>
-            <input class="btn btn-submit text-light fw-medium" type="submit" value="Crear" />
+            <input class="btn btn-submit text-light fw-medium" type="submit" value="Crear" (click)="onSubmit()" />
           </li>
-          
         </ul>
       </form>  
     </div>
