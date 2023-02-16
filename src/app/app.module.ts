@@ -30,6 +30,8 @@ import { FormcursosComponent } from './main/section-cursos/formcursos/formcursos
     SectionCursosComponent,
     HeaderComponent,
     FooterComponent,
+    CoachComponent,
+    FormcursosComponent
 
   ],
   imports: [
