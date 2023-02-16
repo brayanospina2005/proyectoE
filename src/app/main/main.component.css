@@ -16,7 +16,7 @@
 }
 
 .ruta-container {
-    width: 1264px;
+    /* width: 1264px; */
     height: 200px;
     background-color: var( --secondary-color);
     transition-duration: 0.4s;
@@ -92,4 +92,43 @@ button:hover{
 
 .carousel-item img {
     object-fit: cover;
+}
+
+.coach-vista{
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+    .main-container{
+        flex-direction: column;
+    }
+    .coach-vista{
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .slide img{
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .ruta-container{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .img-container{
+        width: auto;
+        background-size: cover;
+    }
+
+    button{
+        margin: auto auto 1rem auto
+    }
+}
+
+@media (max-width: 375px) {
+    .main-container {
+        margin: 2rem 2rem 2rem 2rem;
+    }
 }

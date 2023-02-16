@@ -1,8 +1,12 @@
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    /* display: grid; */
+    /* grid-template-columns: repeat(4, minmax(0, 1fr)); */
     width: max-content;
-    gap: 2.5rem;
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    width: fit-content
 
 }
 

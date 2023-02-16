@@ -37,3 +37,43 @@ a :hover .card-body {
 .card-img-top {
     height: 200px;
 }
+
+.card{
+    width: 18rem
+}
+
+@media (max-width: 992px) {
+    .card{
+        width: 15rem;
+    }
+    .routing-container{
+        width: 15rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .card{
+        width: 18rem;
+    }
+    .routing-container{
+        width: 18rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card{
+        width: 12rem;
+    }
+    .routing-container{
+        width: 12rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .card{
+        width: auto;
+    }
+    .routing-container{
+        width: auto;
+    }
+}

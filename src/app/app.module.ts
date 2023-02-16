@@ -13,6 +13,7 @@ import { CardCursosComponent } from './main/section-cursos/card-cursos/card-curs
 import { MainComponent } from './main/main.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { CoachComponent } from './main/coach/coach.component';
 import { FormcursosComponent } from './main/section-cursos/formcursos/formcursos.component';
 
 
@@ -29,7 +30,8 @@ import { FormcursosComponent } from './main/section-cursos/formcursos/formcursos
     SectionCursosComponent,
     HeaderComponent,
     FooterComponent,
-    FormcursosComponent,
+    CoachComponent,
+    FormcursosComponent
 
   ],
   imports: [
