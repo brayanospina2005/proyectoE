@@ -36,21 +36,28 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-<div class="main-container d-flex flex-column">
-  <div class="ruta-container d-flex rounded">
-    <div class="img-container rounded-start">
-    </div>
-    <div class="content-container d-flex flex-column">
-      <h2>Mis cinco cuerpos</h2>
-      <h3>Ruta de aprendizaje sugerida</h3>
-      <div class="duracion-container d-flex align-items-center">
-        <p class="me-3">Duración</p>
-        <i class="fa-regular fa-clock mb-3 me-1"></i>
-        <p>1h</p>
+<div class="main-container d-flex">
+  <div class="cursos-vista" style="width: fit-content;">
+    <div class="ruta-container d-flex rounded">
+      <div class="img-container rounded-start">
       </div>
+      <div class="content-container d-flex flex-column">
+        <h2>Mis cinco cuerpos</h2>
+        <h3>Ruta de aprendizaje sugerida</h3>
+        <div class="duracion-container d-flex align-items-center">
+          <p class="me-3">Duración</p>
+          <i class="fa-regular fa-clock mb-3 me-1"></i>
+          <p>1h</p>
+        </div>
+      </div>
+      <button class="d-flex align-items-center p-2 rounded">Comenzar ruta <i class="fa-sharp fa-solid fa-angle-right ms-1"></i></button>
     </div>
-    <button class="d-flex align-items-center p-2 rounded">Comenzar ruta <i class="fa-sharp fa-solid fa-angle-right ms-1"></i></button>
+    <p class="subtitulo-black mt-5">Nuestros cursos disponibles</p>
+    <app-section-cursos></app-section-cursos>
   </div>
-  <p class="subtitulo-black mt-5">Nuestros cursos disponibles</p>
-  <app-section-cursos></app-section-cursos>
+  <div class="coach-vista d-flex flex-column gap-4">
+    <app-coach></app-coach>
+    <app-coach></app-coach>
+    <app-coach></app-coach>
+  </div>
 </div>

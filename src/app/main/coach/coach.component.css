@@ -1,0 +1,62 @@
+.coach-img {
+  background-image: url("https://www.international-coaching-institute.com/wp-content/uploads/2021/07/Coach-deportivo-800x420.jpg");
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10rem;
+}
+
+button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: var(--tertiary-color);
+  box-shadow: 0px 15px 20px rgba(140, 67, 235, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+.botones{
+  margin: auto;
+}
+.img-container{
+  display: grid;
+  align-items: center;
+}
+@media (max-width: 1400px) {
+  .arriba{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .img-container {
+    display: grid;
+    justify-content: center;
+  }
+
+  
+}
+
+@media (max-width: 768px) {
+  .container-card{
+    margin: 0 0 0 0 !important;
+  }
+}
