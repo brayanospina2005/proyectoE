@@ -15,3 +15,7 @@
   .whatsapp-icon {
     margin-top:13px;
   }
+
+  .whatsapp:hover {
+    scale: 1.1;
+  }
