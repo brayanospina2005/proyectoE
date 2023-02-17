@@ -57,6 +57,6 @@ button:active {
 
 @media (max-width: 768px) {
   .container-card{
-    margin: 0 0 0 0 !important;
+    margin: 80px 0 0 0 !important;
   }
 }

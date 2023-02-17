@@ -24,22 +24,27 @@ a :hover .card-body {
     transition-duration: 0.6s;
 }
 
+.card-body p{
+    font-size: 15px;
+    text-decoration: none;
+}
+.card-body p::first-letter{
+    
+    text-transform: uppercase;
+}
 .card-body::-webkit-scrollbar {
     display: none;
 }
 
 .card {
     border: none;
-    height: 337px;
-    max-height: 337px;
+    height: 400px;
+    width: 18.5rem
+    /* max-height: 337px; */
 }
 
 .card-img-top {
     height: 200px;
-}
-
-.card{
-    width: 18rem
 }
 
 @media (max-width: 992px) {
