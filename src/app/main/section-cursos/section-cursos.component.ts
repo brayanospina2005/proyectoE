@@ -9,15 +9,9 @@ import { CursoService } from 'src/app/curso.service';
 export class SectionCursosComponent {
   cursos: cursosInfo[] =[];
 
-
   constructor(private cursoService: CursoService) {
     this.cursos = this.cursoService.getCursos();
    }
-  
-  agregarCurso(nuevoCurso: cursosInfo) {
-    this.cursoService.agregarCurso(nuevoCurso);
-  }
-
 }
 
 export interface cursosInfo {

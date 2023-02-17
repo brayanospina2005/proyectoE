@@ -1,5 +1,5 @@
-import { Component, ViewChild} from '@angular/core';
-import { SectionCursosComponent, cursosInfo } from './section-cursos/section-cursos.component';
+import { Component} from '@angular/core';
+
 
 @Component({
   selector: 'app-main',
@@ -7,10 +7,5 @@ import { SectionCursosComponent, cursosInfo } from './section-cursos/section-cur
   styleUrls: ['./main.component.css']
 })
 export class MainComponent {
-  @ViewChild(SectionCursosComponent)
-  private sectionCursosComponent!: SectionCursosComponent;
   
-  agregarCurso(nuevoCurso: cursosInfo) {
-    this.sectionCursosComponent.agregarCurso(nuevoCurso);
-  }
 }

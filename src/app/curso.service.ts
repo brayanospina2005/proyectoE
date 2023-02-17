@@ -63,7 +63,5 @@ export class CursoService {
 
   agregarCurso(curso: cursosInfo) {
     this.cursos.push(curso);
-    const cursosActuales = this.getCursos();
-    this.setCursos(cursosActuales);
   };
 }

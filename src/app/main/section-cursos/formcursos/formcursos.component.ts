@@ -22,11 +22,5 @@
     onSubmit() {
       this.cursoCreado.emit(this.nuevoCurso);
       this.cursoService.agregarCurso(this.nuevoCurso);
-      this.nuevoCurso = {
-        title: '',
-        Image:'',
-        descripcion: '',
-        id: ''
-      };
     }
   }
