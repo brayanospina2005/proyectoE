@@ -1,5 +1,5 @@
-import { Component, ViewChild} from '@angular/core';
-import { SectionCursosComponent, cursosInfo } from './section-cursos/section-cursos.component';
+import { Component} from '@angular/core';
+
 
 @Component({
   selector: 'app-main',
