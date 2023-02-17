@@ -57,13 +57,11 @@ export class CursoService {
     return this.cursos;
   }
 
-  setCursos(cursos: cursosInfo[]) {
-    this.cursos = cursos;
+  setCursos(Cursos: cursosInfo[]) {
+    this.cursos = Cursos;
   }
 
-  agregarCurso(curso: cursosInfo) {
-    this.cursos.push(curso);
-    const cursosActuales = this.getCursos();
-    this.setCursos(cursosActuales);
+  agregarCurso(Curso: cursosInfo) {
+    this.cursos.push(Curso);
   };
 }

@@ -14,9 +14,9 @@ export class SectionCursosComponent {
     this.cursos = this.cursoService.getCursos();
    }
   
-  agregarCurso(nuevoCurso: cursosInfo) {
-    this.cursoService.agregarCurso(nuevoCurso);
-  }
+  // agregarCursoSection(nuevoCurso: cursosInfo) {
+  //   this.cursoService.agregarCurso(nuevoCurso);
+  // }
 
 }
 
