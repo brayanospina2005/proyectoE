@@ -116,7 +116,9 @@ button:hover{
         flex-direction: column;
         height: auto;
     }
-
+    .main-container{
+        margin: 2rem 2rem 2rem 2rem;
+    }
     .img-container{
         width: auto;
         background-size: cover;
