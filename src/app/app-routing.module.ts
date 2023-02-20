@@ -6,6 +6,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { CursosComponent } from './main/cursos/cursos.component';
 import { MainComponent } from './main/main.component';
 import { FormcursosComponent } from './main/section-cursos/formcursos/formcursos.component';
+import { FormComponent } from './form/form.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'cursos/:id',
     component: CursosComponent,
+  },
+  {
+    path: 'login/formulario',
+    component: FormComponent,
   },
   {
     path: '',

@@ -43,7 +43,7 @@ export class LoginComponent implements AfterViewInit{
         else if(this.username === USERNAME2 
             && this.password === PASSWORD) {
                 localStorage.setItem('user', JSON.stringify(this.userinfo));
-                this.router.navigate(['/descripcion']);
+                this.router.navigate(['/main']);
                 }
         else {
           this.loginError = true;
