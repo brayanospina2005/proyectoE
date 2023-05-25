@@ -15,6 +15,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CoachComponent } from './main/coach/coach.component';
 import { FormcursosComponent } from './main/section-cursos/formcursos/formcursos.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PagosComponent } from './main/pagos/pagos.component';
 
 
 @NgModule({
@@ -31,14 +33,15 @@ import { FormcursosComponent } from './main/section-cursos/formcursos/formcursos
     HeaderComponent,
     FooterComponent,
     CoachComponent,
-    FormcursosComponent
+    FormcursosComponent,
+    PagosComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
