@@ -7,6 +7,7 @@ import { CursosComponent } from './main/cursos/cursos.component';
 import { MainComponent } from './main/main.component';
 import { FormcursosComponent } from './main/section-cursos/formcursos/formcursos.component';
 import { FormComponent } from './form/form.component';
+import { PagosComponent } from './main/pagos/pagos.component';
 
 
 const routes: Routes = [
@@ -29,6 +30,10 @@ const routes: Routes = [
       {
         path: 'main',
         component: MainComponent,
+      },
+      {
+        path: 'pagos',
+        component: PagosComponent,
       },
       {
         path: 'nuevo',
